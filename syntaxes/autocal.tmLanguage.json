@@ -1,32 +1,41 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "AutoCal",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.autocal",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.autocal",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.autocal",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.autocal"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "AutoCal",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#expression"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.autocal",
+          "match": "(?i)\\b(if|else)\\b"
+        },
+        {
+          "name": "variable.language.autocal",
+          "match": "(?i)\\b(\\w+)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.autocal",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.autocal",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.autocal"
 }
