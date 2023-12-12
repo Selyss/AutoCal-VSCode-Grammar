@@ -1,0 +1,25 @@
+{
+  "name": "autocal",
+  "displayName": "AutoCal",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "",
+      "aliases": ["autocal", ""],
+      "extensions": [".autocal"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "",
+      "scopeName": "",
+      "path": "./syntaxes/.tmLanguage.json"
+    }]
+  }
+}
