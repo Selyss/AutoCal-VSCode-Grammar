@@ -11,15 +11,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "",
-      "aliases": ["autocal", ""],
+      "id": "autocal",
+      "aliases": ["AutoCal", "autocal"],
       "extensions": [".autocal"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "",
-      "scopeName": "",
-      "path": "./syntaxes/.tmLanguage.json"
+      "language": "autocal",
+      "scopeName": "source.autocal",
+      "path": "./syntaxes/autocal.tmLanguage.json"
     }]
   }
 }

@@ -1,0 +1,17 @@
+IF DAY ODD, ADD (
+  TITLE "Hitting the gym!",
+  DESC "Chest!!!",
+  TIME 9am,
+  RED
+).
+
+ELSE, ADD (
+  TITLE "Rest day.", 
+  ALL DAY,
+  GREY
+).
+
+return
+
+if 
+
